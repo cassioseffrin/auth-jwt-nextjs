@@ -19,7 +19,7 @@ import { UsersService } from './users.service';
 @Controller('api/v1/users')
 @UseGuards(AuthGuard('jwt'))
 export class UsersController {
-  constructor(private readonly usersService: UsersService) {}
+  constructor(private readonly usersService: UsersService) { }
 
   @Get()
   async index() {
